@@ -23,16 +23,16 @@ app.get('/listSchools', listSchools);
 
 
 // False api call
-app.all('*',(req, res)=>{
-    res.status(404).send({
-        "error": {
-            "message": "Route not found",
-            "type": "string",
-            "timestamp": new Date().toISOString(),
-            "statusCode": 404
-        }
-    })
-})
+// app.all('*',(req, res)=>{
+//     res.status(404).send({
+//         "error": {
+//             "message": "Route not found",
+//             "type": "string",
+//             "timestamp": new Date().toISOString(),
+//             "statusCode": 404
+//         }
+//     })
+// })
 // ERROR DESIGN
 // app.use(errorMiddleware)
 
