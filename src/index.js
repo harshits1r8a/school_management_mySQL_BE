@@ -6,9 +6,9 @@ const port  = process.env.PORT || 5000
 
 app.get('/', (req, res) => {
   res.json({ 
-    "Status": 200,
-    "Data": "Welcome to School management",
-    "Error":"null",
+    status: 200,
+    message: "Welcome to School management",
+    
   })
 })
 
