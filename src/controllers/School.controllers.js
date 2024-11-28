@@ -23,7 +23,7 @@ const addSchool = async (req, res, next) => {
 
     const result = await insertSchool();
     res.status(201).json({
-      message: "School List fetched",
+      message: "School added successfully",
       schoolId: result.insertId,
     });
   } catch (err) {
@@ -66,7 +66,7 @@ export const listSchools = async (req, res) => {
       .sort((a, b) => a.distance - b.distance);
 
     res.status(201).json({
-      message: "School added successfully",
+      message: "School List fetched",
       data: sortedSchools,
     });
   } catch (err) {
